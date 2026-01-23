@@ -1,98 +1,115 @@
 console.log('hola desde main js')
 
-console.log("manual")
-console.log(1)
-console.log(2)
-console.log(3)
-console.log(4)
-console.log(5)
+// let nombre = "Lauro"
+// console.log('Antes de la funcion' + nombre)
+// function saludarAlumno(nombre){
+//     console.log('dentro de la funcion' + nombre)
+//     console.log("hola " + nombre)
+// }
+// console.log('Despues de la funcion' + nombre)
+
+// saludarAlumno('Jairo')
+// saludarAlumno('Matias')
+// saludarAlumno('Fatima')
+// saludar()
+// saludar()
 
 
-console.log("con un bucle")
-// i = 1 ===> 1
-// i = 2 ===> 2
-// i = 3 ===> 3
-// i = 4 ===> 4
-// i = 5 ===> 5
-// i = 6 ===> 
-// for(inicialización;condición;Actualización)
-let maximo = 6
-for(let i = 1;i < maximo ; i++){
-    console.log(i)
+// function transportar(origen, destino){
+//     console.log("saliendo de " +origen)
+//     console.log("moviendome")
+//     console.log("llegando a " +destino)
+// }
+
+// transportar("casa","gym")
+// transportar("gym","ofi")
+// transportar("ofi","casa")
+
+// transportar()
+// transportar()
+// transportar()
+// transportar()
+
+// function suma(num1,num2){
+//     // console.log('haciendo suma')
+//     // console.log(num1 + num2)
+//     return num1 + num2
+//     num1 = 8
+// }
+
+// console.log(suma(5,7))
+
+
+// function consumo(edad){
+//     if( edad >= 18){
+//         return "Puedes beber"
+//     }else{
+//         console.log('Me ven ')
+//         return "tienes que esperar"
+//     }
+// }
+
+
+// console.log(consumo(7))
+
+
+// parentesis ()
+// corchetes []
+// llaves {}
+/*
+LIMITacion del cliuen ete se peud eopitmizr peor el metiop xyz ya no funciona
+*/
+function calcularTax(income){
+    return income*0.34
 }
 
+let resultado = calcularTax(30000)
+
+
+document.getElementById('amount').innerHTML = resultado
+
+
+// console.log('ANTES DE windows onlioad')
+// window.onload = function(){
+//     // su codigo 
+//     console.log('Se ejecuto windows onlioad')
+// }
+// console.log('DESPUES DE windows onlioad')
 
 
 
 
 
-
-
-
-// i = i -1 ====> i--
-// i = i +1 ====> i++
-// i = i +x ====> i+=x
-
-for(let i = 20; i >= 15; i-- ){
-    console.log(i)
+// Funcion Declarativas
+saludoDeclarativo()
+function saludoDeclarativo(){
+    console.log("Hola saludoDeclarativo ")
 }
 
-for(j =30; j  <= 50; j+=5){
-    console.log(j)
+// Funcion Expresión
+const saludoExpresion = function(){
+    console.log("Hola saludoExpresion ")    
 }
-
-// ele.           1.      2.      3
-let nombres = ['pablo','mario','karla']
-// pos.           0.       1.     2. 
-console.log(nombres)
-console.log(nombres[2])
-console.log(nombres[0])
-
-console.log(nombres)
-nombres.push('agustin')
-console.log(nombres)
-
-const alumnos = ['ana','zoe','patricia']
-console.log(alumnos)
-alumnos.push('agustin')
-console.log(alumnos)
+saludoExpresion()
 
 
-
-const frutas = ['piña','kiwi','arandano','banana']
-
-console.log(frutas)
-console.log(frutas[1])
-
-frutas.push('melon')
-console.log(frutas)
-
-frutas.unshift('mango')
-console.log(frutas)
-console.log(frutas[1])
-
-frutas.pop()
-console.log(frutas)
-
-frutas.shift()
-console.log(frutas)
-
-
-// frutas.splice(1,1)
-// console.log(frutas)
-// frutas.splice(2,1)
-// console.log(frutas)
-
-frutas.splice(1,4,'tomate','pera','durazno')
-console.log(frutas)
-// frutas.splice(1,0,'melocoton')
-// console.log(frutas)
-
-
-console.log(frutas[0] + "s")
-console.log(frutas[1] + 's')
-console.log(frutas[2] + "s")
-
-for(let i = frutas.length - 1 ; i >= 0 ;i--){
-    console.log(frutas[i] + 's')
+// Función Flecha  Arrow
+const saludoArrow = ()=> {
+    console.log("Hola saludoArrow ")    
 }
+saludoArrow()
+
+
+
+///// REFACTORING /////
+
+// PSEUDOCODIGO
+// desarrollar un generador de excusas de Quiem, Accion, Cuando , Que
+// 1. modificar el htmlo desde js
+// 2. tomar un array de Quiem y obtene run elemento aleaotrio
+// 3. tomar un array de Accion y obtene run elemento aleaotrio
+// 4. tomar un array de Cuando y obtene run elemento aleaotrio
+// 5. tomar un array de Que y obtene run elemento aleaotrio
+// 6. concatenar los elmentos aleatorios
+// 7. asignar la concatenacion a la excusa en html
+// 8. agregar exuca a html
