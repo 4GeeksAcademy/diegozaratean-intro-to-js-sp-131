@@ -6,8 +6,16 @@
     <title>JavaScript</title>
 
     <style>
-        p {
-            background-color: aqua;
+        .dado{
+            width: 100px;
+            height: 100px;
+            display: block;
+            border: 1px solid black;
+            font-size: 60px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px black;
         }
     </style>
 </head>
@@ -15,15 +23,24 @@
     <h1>Bienvenidos a Js 👩🏻‍💻</h1>
 
     <h2 id="title">Titulo</h2>
+
     <p class="text"> text 1</p>
     <p > text 2</p>
     <p class="text"> text 3</p>
-
-    <button onclick="cambiarTitulo()">Cambiar titulo</button>
-
+    <button onclick="changeTitle()">Cambiar titulo</button>
     <div id="example">
         hello <span style="display: none;"> world</span>
     </div>
+    <br><br><br>
+    <div>
+        <p>Primer dado: <span class="dado" id="dice1">1</span></p>
+        <p>Segundo dado: <span class="dado" id="dice2">1</span></p>
+        <button onclick="lanzarDados()">lanzar dados</button>
+
+
+    </div>
+
+
 
 
 
