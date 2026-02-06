@@ -110,6 +110,39 @@ lanzarDados()
 
 
 
+// Programa que tome el alto y el ancho y modifique el tamaño de los dados\
+// DONE: agregr boton de redimensionar los dados
+// vincular el boton con una función
+let boton = document.getElementById('boton') 
+boton.addEventListener("click",resize)
+const quesoy = 'a'
+let quiensoy = 'b'
+// DONE: crear la funcion
+function resize(){
+    console.log('resize')
+    let ancho = document.getElementById('ancho').value 
+    let alto = document.getElementById('alto').value 
+    // DONE: modificar el alto de dado 1
+    document.getElementById('dice1').style.height = alto + 'px'
+    // DONE: modificar el alto de dado 2
+    document.getElementById('dice2').style.height = alto + 'px'
+    // DONE: modificar el ancho de dado 1
+    document.getElementById('dice1').style.width = ancho + 'px'
+    // DONE: modificar el ancho de dado 2
+    document.querySelector('#dice2').style.width = ancho + "px"
+
+}
+// resize()
+// DONE: agregar input de ancho y de alto
+
+setInterval(lanzarDados, 3000);
+
+// function myCallback() {
+//   // Your code here
+//   // Parameters are purely optional.
+//   console.log('pasaron 5 segundos');
+//   lanzarDados()
+// }
 
 
 

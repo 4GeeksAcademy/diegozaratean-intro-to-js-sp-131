@@ -9,6 +9,8 @@
         .dado{
             width: 100px;
             height: 100px;
+            min-height: 100px;
+            min-width: 100px;
             display: block;
             border: 1px solid black;
             font-size: 60px;
@@ -38,6 +40,14 @@
         <button onclick="lanzarDados()">lanzar dados</button>
 
 
+    </div>
+    <br><br>
+    <div>
+        <label for="ancho">Ancho</label>
+        <input type="number" name="ancho" id="ancho" placeholder="ingresa el ancho">
+        <label for="alto">Alto</label>
+        <input type="number" name="alto" id="alto"  placeholder="ingresa el alto">
+        <button id="boton" >cambiar tamaño</button>
     </div>
 
 
